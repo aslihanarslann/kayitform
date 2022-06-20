@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title> FORM ISLEMLERI </title>
+ </head>
+ <body >
+     <center>
+     <h1> Üye Kayıt Formu </h1>
+     <form autocomplete="on" name="kayit" action="kayit.php" method="get">
+        <br>
+         Kullanıcı:<input type="radio" name="user" value="calisan"> Çalışan
+                   <input type="radio" name="user" value="yonetici">Yönetici
+            <br>
+            <br>
+            Cinsiyet: <input type="radio" name="cinsiyet" value="kadin"> Kadın
+            <input type="radio" name="cinsiyet" value="erkek"> Erkek  
+            <br>
+            <br>
+            Yaşadığınız İl: 
+            <select name="iller">
+                    <option selected> İstanbul</option>
+                    <option>İzmir</option>
+                    <option>Ankara</option>
+                    <option>Bartın</option>
+                    <option>Denizli</option>
+                    <option>Edirne</option>
+                    <option>Zonguldak</option>
+            </select>
+            <br>
+            <br>
+        <table>
+         <tr><td>Ad:</td><td><input type="text" name="ad" id="ad" size="20" maxlength="30" required ></td></tr>    
+        
+         <tr><td>Soyad:</td><td> <input type="text" name="soyad" id="idsoyad" size="20" maxlength="30" required ></td> </tr>
+         
+         <tr><td>Yaşınız: </td> <td><input type="number" name="yas" id="number" required ></td></tr>
+         
+         <tr><td>E-mail: <td><input type="email" name="email" id="email" required placeholder="Geçerli e-mail adresi giriniz"></td></tr>
+        
+         <tr><td>Web Sitesi:</td><td> <input type="text" name="soyad" id="idsoyad" size="20" maxlength="30" required placeholder="Geçerli url adresi giriniz"></td> </tr>
+         
+         <tr><td>Tel: </td> <td><input type="tel" name="tel" id="tel" required></td></tr>
+         
+         <tr><td>Şifre: </td><td><input type="password" name="sifre" id="sifre" required placeholder="Şifre giriniz"></td></tr>
+         <tr><td>Şifre: </td><td><input type="password" name="sifre" id="sifre" required placeholder="Şifreyi tekrar giriniz"></td></tr>
+         <tr><td>Kurumsal Şifre: </td><td><input type="password" name="sifre" id="sifre" disabled placeholder="Yönetici şifre alanı"> </td></tr>
+         <tr><td> Yetenekler:</td> <td> <textarea name="yetenek" rows="8" cols="25"> </textarea></td></tr>
+         <br>
+         <br>
+         <tr><td></td><td><input type="checkbox" name="onay">Üyelik sözleşmesini okudum, kabul ediyorum.</td></tr>
+         <tr><td></td><td><input type="checkbox" name="onay">Şirket etkinliklerinden e-mail ve sms ile haberdar olmak istiyorum.</td></tr>
+            
+         <tr> 
+          <td><input type="submit" value="Yolla Gelsin"></td>
+         <td> <input type="reset" value="Temizle"></td>
+        </tr>
+        </table> 
+                
+     </form>
+     </center>
+ </body>
+</html>
